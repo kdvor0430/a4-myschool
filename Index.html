@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kaden Dvorak: My School Days</title>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/myschool.css">
+	</head>
+	<body>
+		
+		<div id="banner">
+			<img id="bannerpic" src="images/class.jpg" height="200" width="300" alt="Class">
+			<h1>Welcome to my school days!</h1>
+			<h2>Created by Kaden Dvorak</h2>
+			<hr class="clearfloat">
+		</div>
+					<ul class="w3-navbar w3-card-2 w3-light-grey">
+			<li>
+				<a href="http://192.168.1.160/a2mcclendon/">Mr. M</a>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-green" href="#">My Favorite Sites</i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://youtube.com">YouTube</a>
+					<a href="http://steam.com">Steam</a>
+					<a href="http://google.com/">Google</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-green" href="#">CHS</i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+					<a href="#">Link 4</a>
+					<a href="#">Link 5</a>
+					<a href="#">Link 6</a>
+					<a href="#">Link 7</a>
+					<a href="#">Link 8</a>
+					<a href="#">Link 9</a>
+					<a href="#">Link 10</a>
+					<a href="#">Link 11</a>
+					<a href="#">Link 12</a>
+					<a href="#">Link 13</a>
+					<a href="#">Link 14</a>
+					<a href="#">Link 15</a>
+					<a href="#">Link 16</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-green" href="#">MHS</i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Andrea D</a>
+					<a href="#">Parker Y</a>
+					<a href="#">Zeke O</a>
+					<a href="#">Kenison S</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-green" href="#">MVHS</i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Carter M</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-green" href="#">RMHS</i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Adrian C</a>
+					<a href="#">Hunter F</a>
+					<a href="#">James G</a>
+					<a href="#">Alejandro E</a>
+					<a href="#">Kaden D</a>
+				</div>
+			</li>
+		</ul>
+
+		<br>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+				for ( i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+	</body>
+</html>
